@@ -152,7 +152,7 @@
             <h4>Entre em contato conosco e veja nossas condições especiais!</h4>
         </div> <!-- companies-container-->
         <div class="wppicon">
-            <img src="{{asset('images/logo.jpg')}}">
+           <!-- <img src="{{asset('images/logo.jpg')}}"> -->
         </div> <!-- wppicon -->
     </section> <!-- Main section -->
 

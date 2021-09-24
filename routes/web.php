@@ -20,3 +20,11 @@ Route::get('/', function () {
 Route::get('/planos', function (){
     return view('planos');
 });
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('welcome');
+})->name('welcome');
+
+Route::get('/minha-conta', function (){
+    return view('myaccount');
+});
