@@ -10,7 +10,6 @@
         }
 
 
-
         .form-control:focus {
             box-shadow: none;
             border-color: #BA68C8
@@ -52,13 +51,18 @@
             border: solid 1px #BA68C8
         }
 
-        .col{
+        .col {
             text-align: -webkit-center;
             padding-bottom: 15px;
         }
-        img{
+
+        img {
             max-width: 100%;
             border-radius: 15px;
+        }
+
+        p{
+            font-size: 12px;
         }
     </style>
 
@@ -66,7 +70,13 @@
     <div class="container rounded bg-white mt-5 mb-5">
         <div class="row">
             <div class="col-md-3 border-right">
-                <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img src="{{asset('images/cr7.jpeg')}}"><span
+                <div class="d-flex flex-column align-items-center text-center p-5 py-5"><img
+                        src="{{asset('images/cr7.jpeg')}}">
+                    <div class="pl-sm-4 pl-2" id="img-section"><b></b>
+                        <p>Usar imagens com menos de 1MB</p>
+                    </div>
+                    <button class="btn btn-primary profile-button"><b>Selecionar foto</b></button>
+                    <span
                         class="font-weight-bold">{{Auth::user()->name}}</span><span
                         class="text-black-50">{{Auth::user()->email}}</span><span> </span></div>
             </div>
