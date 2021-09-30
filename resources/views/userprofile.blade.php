@@ -153,11 +153,11 @@
             <div class="row">
                 <div class="col">
                     <h2>Lista de Hobbys</h2>
-                    <button class="btn btn-primary">+ Hobbys</button>
+                    <button class="btn btn-primary profile-button">+ Hobbys</button>
                 </div>
                 <div class="col">
                     <h2>Lista de Times</h2>
-                    <button class="btn btn-primary">+ Times</button>
+                    <button class="btn btn-primary profile-button">+ Times</button>
                 </div>
             </div>
         </div>
