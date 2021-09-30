@@ -39,7 +39,7 @@
             <a href="/">Início</a>
             <a href="/planos">Planos</a>
             @auth
-                <a href="#">Monte seu perfil</a>
+                <a href="/meu-perfil">Monte seu perfil</a>
             @endauth
 
         </div> <!-- Menu 1 -->
@@ -69,10 +69,13 @@
 @yield('content')
 
 <footer>
-    <a href="#">Quem somos</a>
-    <a href="#">Politica de Privacidade</a>
-    <p>Esse é um ambiente de testes feito por &copy;<a href="https://github.com/grakalnark" target="_blank"</a>Leonardo
-        Losso.</p>
+    <div class="footer">
+        <p>Esse é um ambiente de testes feito por &copy;<a href="https://github.com/grakalnark" target="_blank"</a>
+            Leonardo
+            Losso.</p>
+        <a href="#">Quem somos</a>&nbsp &nbsp
+        <a href="#">Politica de Privacidade</a>
+    </div> <!-- Footer -->
 </footer>
 </body>
 </html>

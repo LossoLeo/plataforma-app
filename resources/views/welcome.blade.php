@@ -163,6 +163,10 @@
             }
         }
 
+        h{
+            color: rgba(203,42,35,0.96);
+        }
+
 
     </style>
     @guest
@@ -187,15 +191,15 @@
             @endguest
             @auth
                 <div class="welcome">
-                    <h5>Bem vindo {{$name ?? ''}}<br>
-                        Acompanhe aqui a sua conta<br>
-                        <a href="/dashboard">
+                    <h5>Olá <h>{{Auth::user()->name}}</h><br>
+                        Acompanhe as novidades na sua conta<br>
+                        <a href="/minha-conta">
                             <div class="btn from-center">Conta</div>
                         </a>
                     </h5>
                     @endauth
                     <div class="clients">
-                        <h1>Conheça as empresas que estão procurando por você!</h1>
+                        <h1>Conheça nossos parceiros</h1>
                         <div class="outer-grid">
                             <div class="inner-grid">
                                 <img class="hoverImages" src="{{asset('images/logo.jpg')}}">

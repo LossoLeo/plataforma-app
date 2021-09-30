@@ -13,18 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [\App\Http\Controllers\HomeController::class, 'welcome']);
+Route::get('/planos', [\App\Http\Controllers\HomeController::class, 'plans']);
+Route::get('/minha-conta', [\App\Http\Controllers\MyAccountController::class, 'account']);
+Route::get('/meu-perfil', [\App\Http\Controllers\UserProfileController::class, 'userprofile']);
 
-Route::get('/planos', function (){
-    return view('planos');
-});
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+Route::middleware(['auth:sanctum', 'verified'])->get('/', function () {
     return view('welcome');
 })->name('welcome');
 
-Route::get('/minha-conta', function (){
-    return view('myaccount');
-});
