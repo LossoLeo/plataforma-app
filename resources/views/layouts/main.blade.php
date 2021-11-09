@@ -39,7 +39,7 @@
             <a href="/">Início</a>
             <a href="/planos">Planos</a>
             @auth
-                <a href="/meu-perfil">Monte seu perfil</a>
+                <a href="/profile">Perfil</a>
             @endauth
 
         </div> <!-- Menu 1 -->
